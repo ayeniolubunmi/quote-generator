@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.8rem;
+    justify-content: center;
+    font-weight: 700;
+    font-family: Montserrat,sans-serif;
+}
+.quote-container{
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.2);
+    background-color: rgba(255,255,255,0.4);
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%23272729' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.quote-text{
+    font-size: 2.75rem;
+}
+.fa-quote-left{
+    font-size: 4rem;
+}
+.long-quote{
+    font-size: 2rem;
+}
+.quote-author{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 15px;
+    font-style: italic;
+    text-align: center;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 1.5rem;
+}
+button{
+    padding: 0.5rem 1.8rem;
+    font-weight: 300;
+    height: 2.5rem;
+    color: #fff;
+    background:#333;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0.3rem rgba(121,121,121,0.62);
+}
+button:hover{
+    filter: brightness(110%);
+}
+button:active{
+    transform: translate(0.0.3rem);
+    box-shadow: 0 0.1rem rgba(255,255,255,0.65);
+}
+
+.fa-twitter:hover{
+    color: #38a1f3;
+}
+.fa-twitter{
+font-size: 2rem;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+@media screen and (max-width: 1000px){
+    .quote-container{
+        margin: auto 10px;
+    }
+    .quote-text{
+        font-size: 2rem;
+    }
+}
